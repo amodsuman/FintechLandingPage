@@ -1268,8 +1268,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xsm\:h-14{
     height: 3.5rem;
   }
-  .xsm\:w-96{
-    width: 24rem;
+  .xsm\:w-\[352px\]{
+    width: 352px;
   }
   .xsm\:w-1\/2{
     width: 50%;
@@ -1282,21 +1282,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
   .xsm\:w-full{
     width: 100%;
-  }
-  .xsm\:w-80{
-    width: 20rem;
-  }
-  .xsm\:w-\[372\]{
-    width: 372;
-  }
-  .xsm\:w-\[372px\]{
-    width: 372px;
-  }
-  .xsm\:w-\[360px\]{
-    width: 360px;
-  }
-  .xsm\:w-\[352px\]{
-    width: 352px;
   }
   .xsm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
