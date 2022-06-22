@@ -1,40 +1,30 @@
-const colors = require('tailwindcss/colors');
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  content: ['./**/*.html', './assets/*.js'],
+  content: ['./index.html', './assets/*.js'],
   theme: {
+    screens: {
+      xsm: '450px',
+      sm: '640px',
+      md: '768px',
+      smm: '900px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+      'tall': { 'raw': '(min-height: 700px)' },
+    },
     extend: {
-      screens: {
-        xsm: '569px',
-        xm: '604px',
-        l: '1256px',
-      },
       colors: {
-        primaryColor1: '#F57059',
-        primaryColor2: '#9EA2B3',
-        primaryColor3: '#F24021',
-        greyColor1: '#757095',
-        greyColor2: '#64607D',
-        greyColor3: '#DEE1E6',
-        greyColor4: '#E9ECF2',
-        greyColor5: '#F8F9FD',
-        greyColor6: '#F9F9F9',
-        greyColor7: '#E5E5EA',
-        greyColor8: '#F2F3F4',
-        greyColor9: '#C4C4C4',
-        blueColor1: '#1B1C31',
-        blueColor2: '#00E1F0',
-        blueColor3: '#3734A9',
-        greenColor1: '#01966B',
-        greenColor2: '#002D20',
-        greenColor3: '#05796B',
-        greenColor4: '#03534A',
+        primaryColor: '#F57059',
+        secondaryColor: '#9EA2B3',
+        tertiaryColor: '#F24021',
       },
       fontFamily: {
         manrope: ['Manrope'],
         poppins: ['Poppins'],
       },
       fontSize: {
-        '10xl': '204px',
+        '10xl': '152px',
+        '11xl': '204px',
       },
       lineHeight: {
         11: '46px',
@@ -46,6 +36,9 @@ module.exports = {
         tightest: '-0.003em',
       },
       backgroundSize: {
+        '20%': '20%',
+        '30%': '30%',
+        '40%': '40%',
         '55%': '55%',
         '60%': '60%',
         '100%': '100%',
@@ -54,7 +47,8 @@ module.exports = {
         65: '265px',
       },
       borderWidth: {
-        '20': '20px',
+        '10': '10px',
+        '16': '16px',
       },
     },
   },
