@@ -29,22 +29,10 @@ module.exports = {
       lineHeight: {
         11: '46px',
         12: '60px',
-        13: '80px',
-        14: '204px',
+        13: '204px',
       },
       letterSpacing: {
         tightest: '-0.003em',
-      },
-      backgroundSize: {
-        '20%': '20%',
-        '30%': '30%',
-        '40%': '40%',
-        '55%': '55%',
-        '60%': '60%',
-        '100%': '100%',
-      },
-      width: {
-        65: '265px',
       },
       borderWidth: {
         '10': '10px',

@@ -772,14 +772,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
-.bg-60\%{
-  background-size: 60%;
-}
 .bg-auto{
   background-size: auto;
-}
-.bg-100\%{
-  background-size: 100%;
 }
 .bg-cover{
   background-size: cover;
@@ -993,7 +987,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .leading-9{
   line-height: 2.25rem;
 }
-.leading-14{
+.leading-13{
   line-height: 204px;
 }
 .leading-3{
@@ -1289,6 +1283,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xsm\:w-full{
     width: 100%;
   }
+  .xsm\:w-80{
+    width: 20rem;
+  }
+  .xsm\:w-\[372\]{
+    width: 372;
+  }
+  .xsm\:w-\[372px\]{
+    width: 372px;
+  }
+  .xsm\:w-\[360px\]{
+    width: 360px;
+  }
+  .xsm\:w-\[352px\]{
+    width: 352px;
+  }
   .xsm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1412,7 +1421,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:w-\[192px\]{
     width: 192px;
   }
-  .sm\:w-65{
+  .sm\:w-\[265px\]{
     width: 265px;
   }
   .sm\:w-\[46\%\]{
@@ -1856,7 +1865,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   .smm\:leading-7{
     line-height: 1.75rem;
   }
-  .smm\:leading-14{
+  .smm\:leading-13{
     line-height: 204px;
   }
   .smm\:leading-12{
