@@ -51,10 +51,10 @@
     </section>
 
     <!-- Hamburger Menu -->
-    <div class="fixed w-full h-full -left-[500px] p-3 pt-14 z-40 shadow-xl grid tall:place-items-center bg-white opacity-95 xsm:w-[352px] xsm:p-10 xsm:pt-20 smm:hidden ease-in-out duration-200 overflow-y-scroll"
+    <div class="fixed w-full h-full -left-[500px] p-3 pt-14 z-40 shadow-xl bg-white opacity-95 xsm:w-[352px] xsm:p-10 xsm:pt-20 smm:hidden ease-in-out duration-200 overflow-y-auto"
         id="hammenu">
         <!-- Menu Items -->
-        <div class="py-10 flex flex-col space-y-10 font-manrope text-lg leading-7 font-semibold overflow-y-scroll">
+        <div class="pt-10 flex flex-col space-y-8 font-manrope text-base leading-7 font-semibold">
             <a href="#" class="text-center hover:text-secondaryColor hover:scale-125 ease-in-out duration-300">
                 Product
             </a>
@@ -67,14 +67,17 @@
             <a href="#" class="text-center hover:text-secondaryColor hover:scale-125 ease-in-out duration-300">
                 Pricing
             </a>
-            <a href="#" class="flex mx-auto w-[175px] px-[57px] py-3 text-white border-2 border-[#00E1F0] bg-[#00E1F0] rounded-md baseline 
-                hover:bg-transparent hover:text-[#00E1F0] ease-in-out duration-200">
-                Sign In
-            </a>
-            <a href="#" class="flex mx-auto w-[175px] px-11 py-3 text-center text-white border-2 border-primaryColor bg-primaryColor rounded-md baseline 
-                hover:bg-transparent hover:text-primaryColor ease-in-out duration-200">
-                Start Free
-            </a>
+            <div class="flex flex-row justify-center space-x-3">
+                <a href="#" class="w-1/2 max-w-[156px] py-2 text-center text-white border-2 border-[#00E1F0] bg-[#00E1F0] rounded-md baseline 
+                    hover:bg-transparent hover:text-[#00E1F0] ease-in-out duration-200">
+                    Sign In
+                </a>
+                <a href="#" class="w-1/2 max-w-[156px] py-2 text-center text-white border-2 border-primaryColor bg-primaryColor rounded-md baseline 
+                    hover:bg-transparent hover:text-primaryColor ease-in-out duration-200">
+                    Start Free
+                </a>
+
+            </div>
         </div>
     </div>
 
@@ -98,7 +101,7 @@
                     class="mb-10 max-w-md mx-auto h-16 p-1 bg-white shadow-md xsm:p-2 sm:mb-12 smm:mx-0 smm:h-24 smm:p-4 smm:mb-14">
                     <form class="flex flex-col h-full justify-center content-center relative md:justify-start">
                         <input type="email" required placeholder="Register using email address"
-                            class="h-full w-2/3 pr-1 text-sm outline-none placeholder:font-poppins placeholder:text-xs placeholder:leading-5 placeholder:font-semibold placeholder:text-black placeholder:text-center placeholder:opacity-40 xsm:pr-2 xsm:placeholder:text-base smm:pr-4">
+                            class="h-full w-2/3 pr-1 text-sm outline-none placeholder:font-poppins placeholder:text-xs placeholder:leading-5 placeholder:font-semibold placeholder:text-black placeholder:opacity-40 xsm:pr-2 xsm:placeholder:text-base smm:pr-4">
                         <button id="registerSubmit" type="submit"
                             class="absolute h-full w-1/3 right-0 outline-none border-2 border-[#1B1C31] bg-[#1B1C31] text-xs text-white hover:bg-transparent hover:text-[#1B1C31] ease-in-out duration-200  xsm:text-base">Submit</button>
                     </form>
@@ -118,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <img class="absolute right-0 bottom-0 w-full h-fit -z-10 opacity-30 sm:w-[80%] lg:w-[60%] xl:w-[55%] xl:opacity-90 2xl:w-[45%]"
+            <img class="hidden absolute right-0 bottom-0 w-full -z-10 opacity-30 sm:w-[80%] smm:block smm:w-[60%] lg:w-[60%] xl:w-[55%] xl:opacity-90 2xl:w-[45%]"
                 src="./images/bg2.png" alt="">
         </div>
     </header>
@@ -248,9 +251,8 @@
     </section>
 
     <!-- About 1 -->
-    <section class="pb-14 mb-14 sm:mb-20 sm:pb-20 smm:mb-24 smm:pb-28 bg-no-repeat bg-bottom bg-cover xl:-mt-20"
-        style="background-image: url(./images/bg5.png);">
-        <div class="max-w-screen-xl mx-auto px-3 xsm:px-7">
+    <section class="mb-14 sm:mb-20 smm:mb-24 xl:-mt-20">
+        <div class="max-w-screen-xl mx-auto px-3 relative z-30 xsm:px-7">
             <div class="w-full mb-14 py-14 px-9 mx-auto text-white text-center rounded-xl sm:mb-20 sm:px-16 md:w-4/5 smm:mb-24 smm:py-24 smm:px-28 smm:w-3/4 lg:w-2/3 bg-no-repeat bg-center bg-cover"
                 style="background-image: linear-gradient(to bottom, rgba(22, 1, 44, 0.493), rgba(22, 1, 44, 0.493)),url(./images/bg4.png);">
                 <h4
@@ -267,89 +269,94 @@
                     Get Started
                 </a>
             </div>
-            <!-- Heading -->
-            <h4
-                class="font-manrope text-2xl leading-10 tracking-tight font-extrabold text-center mb-3 sm:text-3xl sm:leading-11 smm:text-4xl smm:leading-12">
-                We help your business grow faster.
-            </h4>
-            <p
-                class="max-w-screen-xm mx-auto font-poppins text-base leading-6 tracking-tight text-center text-[#64607D] mb-8 xsm:mb-10 sm:mb-12 smm:mb-16 smm:text-lg smm:leading-8">
-                Why kept very ever home mrs. Considered sympathize ten uncommonly occassional assistance sufficent.
-            </p>
-            <div class="flex flex-wrap justify-around mb-3">
-                <!-- Box 1 -->
-                <div
-                    class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[46%] smm:w-[30%] smm:shadow-none">
-                    <img src="./images/icon2.png" alt="" class="w-8 mb-6 smm:w-10">
-                    <h4
-                        class="mb-3 font-manrope text-lg leading-6 tracking-tight font-extrabold sm:text-xl sm:leading-7 smm:text-2xl smm:leading-12">
-                        Offending belonging
-                    </h4>
-                    <p
-                        class="flex-1 font-manrope text-sm leading-7 tracking-tight font-medium text-[#64607D] mb-5 sm:text-base">
-                        Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise
-                        screened no up as.
-                    </p>
-                    <a href="#"
-                        class="font-manrope text-sm leading-4 font-semibold text-[#01966B] hover:text-[#002D20] ease-in-out duration-200 sm:text-base">
-                        Read More<span class="ml-3">&#10132;</span>
-                    </a>
-                </div>
-                <!-- Box 2 -->
-                <div
-                    class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[46%] smm:w-[30%] smm:shadow-none">
-                    <img src="./images/icon3.png" alt="" class="w-8 mb-6 smm:w-10">
-                    <h4
-                        class="mb-3 font-manrope text-lg leading-6 tracking-tight font-extrabold sm:text-xl sm:leading-7 smm:text-2xl smm:leading-12">
-                        Promotion & provision
-                    </h4>
-                    <p
-                        class="flex-1 font-manrope text-sm leading-7 tracking-tight font-medium text-[#64607D] mb-5 sm:text-base">
-                        Led ask possible mistress relation elegance eat likewise debating. My message or am nothing
-                        amongst chiefly address.
-                    </p>
-                    <a href="#"
-                        class="font-manrope text-sm leading-4 font-semibold text-[#01966B] hover:text-[#002D20] ease-in-out duration-200 sm:text-base">
-                        Read More<span class="ml-3">&#10132;</span>
-                    </a>
-                </div>
-                <!-- Box 3 -->
-                <div
-                    class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[46%] smm:w-[30%] smm:shadow-none">
-                    <img src="./images/icon4.png" alt="" class="w-8 mb-6 smm:w-10">
-                    <h4
-                        class="mb-3 font-manrope text-lg leading-6 tracking-tight font-extrabold sm:text-xl sm:leading-7 smm:text-2xl smm:leading-12">
-                        Blessing application
-                    </h4>
-                    <p
-                        class="flex-1 font-manrope text-sm leading-7 tracking-tight font-medium text-[#64607D] mb-5 sm:text-base">
-                        Ham windows sixteen who inquiry fortune demands. Is be upon sang fond must shew. Really boy law
-                        county she unable her sister.
-                    </p>
-                    <a href="#"
-                        class="font-manrope text-sm leading-4 font-semibold text-[#01966B] hover:text-[#002D20] ease-in-out duration-200 sm:text-base">
-                        Read More<span class="ml-3">&#10132;</span>
-                    </a>
-                </div>
-            </div>
-            <a href="#"
-                class="w-[212px] mx-auto flex px-8 py-3 font-poppins text-sm leading-3 text-white border-2 border-primaryColor bg-primaryColor 
-                rounded-xl hover:bg-transparent hover:text-primaryColor ease-in-out duration-200 sm:w-[265px] sm:px-12 sm:py-5 sm:text-base sm:leading-5">
-                More About Platform
-            </a>
         </div>
+        <div class="pb-14 sm:pb-20 smm:pb-28 bg-no-repeat bg-bottom bg-cover"
+            style="background-image: url(./images/bg5.png);">
+            <div class="max-w-screen-xl mx-auto px-3 -mt-72 pt-72 xsm:px-7 xl:-mt-56 xl:pt-56 2xl:-mt-40 2xl:pt-40">
+                <!-- Heading -->
+                <h4
+                    class="font-manrope text-2xl leading-10 tracking-tight font-extrabold text-center mb-3 sm:text-3xl sm:leading-11 smm:text-4xl smm:leading-12">
+                    We help your business grow faster.
+                </h4>
+                <p
+                    class="max-w-screen-xm mx-auto font-poppins text-base leading-6 tracking-tight text-center text-[#64607D] mb-8 xsm:mb-10 sm:mb-12 smm:mb-16 smm:text-lg smm:leading-8">
+                    Why kept very ever home mrs. Considered sympathize ten uncommonly occassional assistance sufficent.
+                </p>
+                <div class="flex flex-wrap justify-around mb-3">
+                    <!-- Box 1 -->
+                    <div
+                        class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[47%] smm:w-[31%] smm:shadow-none">
+                        <img src="./images/icon2.png" alt="" class="w-8 mb-6 smm:w-10">
+                        <h4
+                            class="mb-3 font-manrope text-lg leading-6 tracking-tight font-extrabold sm:text-xl sm:leading-7 smm:text-2xl smm:leading-12">
+                            Offending belonging
+                        </h4>
+                        <p
+                            class="flex-1 font-manrope text-sm leading-7 tracking-tight font-medium text-[#64607D] mb-5 sm:text-base">
+                            Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise
+                            screened no up as.
+                        </p>
+                        <a href="#"
+                            class="font-manrope text-sm leading-4 font-semibold text-[#01966B] hover:text-[#002D20] ease-in-out duration-200 sm:text-base">
+                            Read More<span class="ml-3">&#10132;</span>
+                        </a>
+                    </div>
+                    <!-- Box 2 -->
+                    <div
+                        class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[47%] smm:w-[31%] smm:shadow-none">
+                        <img src="./images/icon3.png" alt="" class="w-8 mb-6 smm:w-10">
+                        <h4
+                            class="mb-3 font-manrope text-lg leading-6 tracking-tight font-extrabold sm:text-xl sm:leading-7 smm:text-2xl smm:leading-12">
+                            Promotion & provision
+                        </h4>
+                        <p
+                            class="flex-1 font-manrope text-sm leading-7 tracking-tight font-medium text-[#64607D] mb-5 sm:text-base">
+                            Led ask possible mistress relation elegance eat likewise debating. My message or am nothing
+                            amongst chiefly address.
+                        </p>
+                        <a href="#"
+                            class="font-manrope text-sm leading-4 font-semibold text-[#01966B] hover:text-[#002D20] ease-in-out duration-200 sm:text-base">
+                            Read More<span class="ml-3">&#10132;</span>
+                        </a>
+                    </div>
+                    <!-- Box 3 -->
+                    <div
+                        class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[47%] smm:w-[31%] smm:shadow-none">
+                        <img src="./images/icon4.png" alt="" class="w-8 mb-6 smm:w-10">
+                        <h4
+                            class="mb-3 font-manrope text-lg leading-6 tracking-tight font-extrabold sm:text-xl sm:leading-7 smm:text-2xl smm:leading-12">
+                            Blessing application
+                        </h4>
+                        <p
+                            class="flex-1 font-manrope text-sm leading-7 tracking-tight font-medium text-[#64607D] mb-5 sm:text-base">
+                            Ham windows sixteen who inquiry fortune demands. Is be upon sang fond must shew. Really boy
+                            law
+                            county she unable her sister.
+                        </p>
+                        <a href="#"
+                            class="font-manrope text-sm leading-4 font-semibold text-[#01966B] hover:text-[#002D20] ease-in-out duration-200 sm:text-base">
+                            Read More<span class="ml-3">&#10132;</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#"
+                    class="w-[212px] mx-auto flex px-8 py-3 font-poppins text-sm leading-3 text-white border-2 border-primaryColor bg-primaryColor 
+                rounded-xl hover:bg-transparent hover:text-primaryColor ease-in-out duration-200 sm:w-[265px] sm:px-12 sm:py-5 sm:text-base sm:leading-5">
+                    More About Platform
+                </a>
+            </div>
     </section>
 
     <!-- About 2 -->
     <section class="mb-14 sm:mb-20 smm:mb-24">
         <div class="max-w-screen-xl mx-auto px-3 xsm:px-7">
             <div
-                class="flex flex-col space-x-5 space-y-4 p-6 rounded-2xl border-2 border-[#DEE1E6] xsm:flex-row xsm:space-y-0 lg:p-9">
+                class="flex flex-col space-x-0 space-y-4 p-6 rounded-2xl border-2 border-[#DEE1E6] xsm:flex-row xsm:space-x-5 xsm:space-y-0 lg:p-9">
                 <h4
-                    class="w-full font-manrope text-2xl leading-9 font-extrabold text-center tracking-tight my-auto xsm:w-1/2 xsm:text-left sm:text-3xl sm:leading-10 smm:w-1/3 smm:text-4xl smm:leading-11">
+                    class="w-full font-manrope text-2xl leading-9 font-extrabold text-left tracking-tight my-auto xsm:w-1/2 sm:text-3xl sm:leading-10 smm:w-1/3 smm:text-4xl smm:leading-11">
                     Among leave law built now.
                 </h4>
-                <div class="grid grid-cols-1 justify-center w-1/2 gap-5 my-auto smm:grid-cols-3 smm:w-2/3">
+                <div class="grid grid-cols-1 w-full gap-5 my-auto xsm:w-1/2 smm:grid-cols-3 smm:w-2/3">
                     <div class="flex flex-1 flex-row space-x-4 w-full">
                         <img src="./images/icon5.png" alt=""
                             class="p-3 w-10 h-10 bg-[#E9ECF2] rounded-md my-auto smm:w-12 md:h-12">
@@ -646,23 +653,22 @@
             <div class="flex flex-col justify-center gap-10 sm:flex-row smm:gap-24">
                 <!-- Left Content -->
                 <div class="w-full sm:w-1/2">
-                    <h6 class="font-poppins font-bold text-xs text-center mb-4 sm:text-sm smm:text-base smm:text-left">
+                    <h6 class="font-poppins font-bold text-xs text-center mb-4 sm:text-sm smm:text-base md:text-left">
                         WHY CHOOSE US
                     </h6>
                     <h4
-                        class="font-manrope font-extrabold text-2xl leading-9 tracking-tight text-center mb-7 xsm:text-3xl xsm:leading-10  sm:text-4xl sm:leading-11 smm:text-5xl smm:leading-12 smm:text-left">
+                        class="font-manrope font-extrabold text-2xl leading-9 tracking-tight text-center mb-7 xsm:text-3xl xsm:leading-10  sm:text-4xl sm:leading-11 smm:text-5xl smm:leading-12 md:text-left">
                         Track your crypto portfolio on the best way possibel
                     </h4>
                     <p
-                        class="font-manrope font-medium text-base tracing-tight text-center sm:text-lg smm:text-xl smm:text-left">
+                        class="font-manrope font-medium text-base tracing-tight text-center sm:text-lg smm:text-xl md:text-left">
                         Mean if he they been no hold mr. is at much do made. Latter person am secure of estate genius
                         at.
                     </p>
                 </div>
                 <!-- Right Form -->
                 <div class="w-full my-auto sm:w-1/2">
-                    <form
-                        class="max-w-sm mx-auto w-full justify-center content-center relative bg-transparent md:justify-start">
+                    <form class="w-full justify-center content-center relative bg-transparent md:justify-start">
                         <input id="email" type="email" placeholder="Email Address" required
                             class="h-11 w-full px-4 rounded-md bg-[#F2F3F4] outline-none opacity-20 text-black font-semibold placeholder:font-poppins placeholder:font-medium placeholder:text-base placeholder:tracking-tight mb-6 sm:h-14 sm:placeholder:text-lg">
                         <input id="password" type="password" placeholder="Password" required
@@ -761,7 +767,7 @@
                     <form class="h-14 w-full justify-center content-center relative md:justify-start mb-6">
                         <input type="email" placeholder="Your email address" required
                             class="h-full w-2/3 px-4 bg-[#F9F9F9] outline-none placeholder:font-manrope placeholder:text-xs placeholder:leading-5 
-                            placeholder:tracking-tight placeholder:font-medium placeholder:text-black placeholder:text-center placeholder:opacity-20 sm:placeholder:text-sm smm:placeholder:text-base">
+                            placeholder:tracking-tight placeholder:font-medium placeholder:text-black placeholder:opacity-20 sm:placeholder:text-sm smm:placeholder:text-base">
                         <button id="newsletterSubmit" type="submit"
                             class="absolute h-full w-1/3 right-0 outline-none border-2 font-manrope font-medium text-xs tracking-tight border-[#00E1F0] bg-[#00E1F0] 
                             text-white hover:bg-transparent hover:text-[#00E1F0] ease-in-out duration-200 sm:text-sm smm:text-base">
