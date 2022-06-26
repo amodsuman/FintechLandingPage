@@ -84,8 +84,8 @@
     <!-- Hero Section -->
     <header class="pt-40 pb-20 relative smm:pt-52 smm:pb-32">
         <div class="max-w-screen-xl mx-auto px-3 xsm:px-7">
-            <div class="w-full smm:w-[569px]">
-                <h6 class="mb-1 font-poppins text-base font-semibold text-center sm:text-xl smm:text-left">
+            <div class="w-full smm:w-[569px]" id="heroDesc">
+                <h6 class="heading mb-1 font-poppins text-base font-semibold text-center sm:text-xl smm:text-left">
                     Product Growth Solution in Single Platform.
                 </h6>
                 <h1
@@ -102,7 +102,7 @@
                     <form class="flex flex-col h-full justify-center content-center relative md:justify-start">
                         <input type="email" required placeholder="Register using email address"
                             class="h-full w-2/3 pr-1 text-sm outline-none placeholder:font-poppins placeholder:text-xs placeholder:leading-5 placeholder:font-semibold placeholder:text-black placeholder:opacity-40 xsm:pr-2 xsm:placeholder:text-base smm:pr-4">
-                        <button id="registerSubmit" type="submit"
+                        <button type="submit"
                             class="absolute h-full w-1/3 right-0 outline-none border-2 border-[#1B1C31] bg-[#1B1C31] text-xs text-white hover:bg-transparent hover:text-[#1B1C31] ease-in-out duration-200  xsm:text-base">Submit</button>
                     </form>
                 </div>
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <img class="hidden absolute right-0 bottom-0 w-full -z-10 opacity-30 sm:w-[80%] smm:block smm:w-[60%] lg:w-[60%] xl:w-[55%] xl:opacity-90 2xl:w-[45%]"
-                src="./images/bg2.png" alt="">
+                id="heroImg" src="./images/bg2.png" alt="">
         </div>
     </header>
 
@@ -134,7 +134,7 @@
                 Over 32k+ software business growing with AR Shakir
             </h4>
             <!-- Clients Logo -->
-            <div class="flex flex-wrap justify-center gap-10 pt-14">
+            <div class="flex flex-wrap justify-center gap-10 pt-14" id="clients">
                 <div class="">
                     <img src="./images/client1.png" alt="">
                 </div>
@@ -163,10 +163,11 @@
     <!-- Roadmap -->
     <section
         class="mb-4 bg-no-repeat bg-right-top bg-auto sm:mb-11 md:pb-36 md:pt-36 smm:pt-40 smm:pb-[200px] lg:pt-32 lg:pb-[180px] xl:pt-20 xl:pb-[252px]"
-        style="background-image: url(./images/bg3.png);">
+        style="background-image: url(./images/bg3.png);" id="roadmap">
         <div class="relative max-w-screen-xl mx-auto px-3 xsm:px-7">
             <!-- Left Description -->
-            <div class="relative max-w-sm mb-6 z-20 md:absolute md:top-0 md:-mt-36 smm:-mt-40 lg:-mt-32 xl:-mt-20">
+            <div class="relative max-w-sm mb-6 z-20 md:absolute md:top-0 md:-mt-36 smm:-mt-40 lg:-mt-32 xl:-mt-20"
+                id="roadmapDesc">
                 <h6
                     class="font-poppins font-bold text-smm text-primaryColor mb-2 text-center xsm:text-left smm:text-sm smm:mb-4">
                     STOCKIE OPERATION ACROSS THE WORLD
@@ -181,16 +182,16 @@
                     indulgence way everything joy.
                 </p>
                 <a href="#"
-                    class="mx-auto flex w-[140px] px-7 py-3 font-poppins text-sm leading-5 text-white border-2 border-primaryColor bg-primaryColor 
-                    rounded-full hover:bg-transparent hover:text-primaryColor ease-in-out duration-200 xsm:mx-0 sm:w-[192px] sm:px-12 sm:py-4 sm:text-base sm:leading-5">
+                    class="mx-auto flex w-[140px] px-7 py-2 font-poppins text-sm leading-5 text-white border-2 border-primaryColor bg-primaryColor 
+                    rounded-full hover:bg-transparent hover:text-primaryColor ease-in-out duration-200 xsm:mx-0 sm:w-[192px] sm:px-12 sm:py-3 sm:text-base sm:leading-5 button">
                     Get Started
                 </a>
 
             </div>
-            <img src="./images/roadmap.png" class="hidden w-[84.67%] mx-0 -ml-[1.75%] md:block" alt="">
+            <img src="./images/roadmap.svg" class="hidden w-[84.67%] mx-0 -ml-[1.75%] md:block" id="roadmapImg" alt="">
             <!-- Step 1 -->
-            <div
-                class="h-60 relative mx-auto pt-5 max-w-[280px] xsm:mr-0 md:absolute md:pt-0 md:max-w-[194px] md:top-[78%] md:left-[13%] lg:max-w-[268px] xl:max-w-[280px]">
+            <div class="h-60 relative mx-auto pt-5 max-w-[280px] xsm:mr-0 md:absolute md:pt-0 md:max-w-[194px] md:top-[78%] md:left-[13%] lg:max-w-[268px] xl:max-w-[280px]"
+                id="roadmapStep1">
                 <div
                     class="w-9 h-9 mt-2 bg-[#C4C4C4] border-10 border-white rounded-full shadow-xl mb-6 lg:w-14 lg:h-14 lg:border-16">
                 </div>
@@ -208,8 +209,8 @@
                 </h2>
             </div>
             <!-- Step 2 -->
-            <div
-                class="h-60 relative mx-auto pt-5 max-w-[280px] xsm:mx-0 md:absolute md:pt-0 md:max-w-[194px] md:top-[47%] md:left-[42%] lg:max-w-[268px] xl:max-w-[280px]">
+            <div class="h-60 relative mx-auto pt-5 max-w-[280px] xsm:mx-0 md:absolute md:pt-0 md:max-w-[194px] md:top-[47%] md:left-[42%] lg:max-w-[268px] xl:max-w-[280px]"
+                id="roadmapStep2">
                 <div
                     class="w-9 h-9 mt-2 bg-[#C4C4C4] border-10 border-white rounded-full shadow-xl mb-6 lg:w-14 lg:h-14 lg:border-16">
                 </div>
@@ -228,8 +229,8 @@
                 </h2>
             </div>
             <!-- Step 3 -->
-            <div
-                class="h-60 relative mx-auto pt-5 max-w-[280px] xsm:mr-0 md:absolute md:pt-0 md:max-w-[194px] md:-top-[7%] md:left-[71%] lg:max-w-[268px] xl:max-w-[280px]">
+            <div class="h-60 relative mx-auto pt-5 max-w-[280px] xsm:mr-0 md:absolute md:pt-0 md:max-w-[194px] md:-top-[7%] md:left-[71%] lg:max-w-[268px] xl:max-w-[280px]"
+                id="roadmapStep3">
                 <div
                     class="w-9 h-9 mt-2 bg-[#C4C4C4] border-10 border-white rounded-full shadow-xl mb-6 lg:w-14 lg:h-14 lg:border-16">
                 </div>
@@ -252,8 +253,8 @@
 
     <!-- About 1 -->
     <section class="mb-14 sm:mb-20 smm:mb-24 xl:-mt-20">
-        <div class="max-w-screen-xl mx-auto px-3 relative z-30 xsm:px-7">
-            <div class="w-full mb-14 py-14 px-9 mx-auto text-white text-center rounded-xl sm:mb-20 sm:px-16 md:w-4/5 smm:mb-24 smm:py-24 smm:px-28 smm:w-3/4 lg:w-2/3 bg-no-repeat bg-center bg-cover"
+        <div class="max-w-screen-xl mx-auto px-3 relative z-30 xsm:px-7" id="about1Desc">
+            <div class="myhead w-full mb-14 py-14 px-9 mx-auto text-white text-center rounded-xl sm:mb-20 sm:px-16 md:w-4/5 smm:mb-24 smm:py-24 smm:px-28 smm:w-3/4 lg:w-2/3 bg-no-repeat bg-center bg-cover"
                 style="background-image: linear-gradient(to bottom, rgba(22, 1, 44, 0.493), rgba(22, 1, 44, 0.493)),url(./images/bg4.png);">
                 <h4
                     class="font-manrope text-2xl leading-10 tracking-tight font-extrabold mb-3 sm:text-3xl sm:leading-11 smm:text-4xl smm:leading-12">
@@ -264,8 +265,8 @@
                     realize.
                 </p>
                 <a href="#"
-                    class="px-7 py-3 font-poppins text-sm leading-3 tracking-tight text-white border-2 border-primaryColor bg-primaryColor 
-                    rounded-full hover:bg-transparent hover:border-white ease-in-out duration-200 sm:w-[265px] sm:px-9 sm:py-4 sm:text-base sm:leading-5">
+                    class="px-7 py-2 font-poppins text-sm leading-3 tracking-tight text-white border-2 border-primaryColor bg-primaryColor 
+                    rounded-full hover:bg-transparent hover:border-white ease-in-out duration-200 sm:w-[265px] sm:px-9 sm:py-3 sm:text-base sm:leading-5">
                     Get Started
                 </a>
             </div>
@@ -284,8 +285,8 @@
                 </p>
                 <div class="flex flex-wrap justify-around mb-3">
                     <!-- Box 1 -->
-                    <div
-                        class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[47%] smm:w-[31%] smm:shadow-none">
+                    <div class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[47%] smm:w-[31%] smm:shadow-none"
+                        id="about1Box1">
                         <img src="./images/icon2.png" alt="" class="w-8 mb-6 smm:w-10">
                         <h4
                             class="mb-3 font-manrope text-lg leading-6 tracking-tight font-extrabold sm:text-xl sm:leading-7 smm:text-2xl smm:leading-12">
@@ -302,8 +303,8 @@
                         </a>
                     </div>
                     <!-- Box 2 -->
-                    <div
-                        class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[47%] smm:w-[31%] smm:shadow-none">
+                    <div class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[47%] smm:w-[31%] smm:shadow-none"
+                        id="about1Box2">
                         <img src="./images/icon3.png" alt="" class="w-8 mb-6 smm:w-10">
                         <h4
                             class="mb-3 font-manrope text-lg leading-6 tracking-tight font-extrabold sm:text-xl sm:leading-7 smm:text-2xl smm:leading-12">
@@ -320,8 +321,8 @@
                         </a>
                     </div>
                     <!-- Box 3 -->
-                    <div
-                        class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[47%] smm:w-[31%] smm:shadow-none">
+                    <div class="mb-8 px-8 pt-16 pb-10 w-full shadow-lg flex flex-col bg-white rounded-2xl sm:w-[47%] smm:w-[31%] smm:shadow-none"
+                        id="about1Box3">
                         <img src="./images/icon4.png" alt="" class="w-8 mb-6 smm:w-10">
                         <h4
                             class="mb-3 font-manrope text-lg leading-6 tracking-tight font-extrabold sm:text-xl sm:leading-7 smm:text-2xl smm:leading-12">
@@ -341,10 +342,11 @@
                 </div>
                 <a href="#"
                     class="w-[212px] mx-auto flex px-8 py-3 font-poppins text-sm leading-3 text-white border-2 border-primaryColor bg-primaryColor 
-                rounded-xl hover:bg-transparent hover:text-primaryColor ease-in-out duration-200 sm:w-[265px] sm:px-12 sm:py-5 sm:text-base sm:leading-5">
+                rounded-xl hover:bg-transparent hover:text-primaryColor ease-in-out duration-200 sm:w-[265px] sm:px-12 sm:py-5 sm:text-base sm:leading-5 button">
                     More About Platform
                 </a>
             </div>
+        </div>
     </section>
 
     <!-- About 2 -->
@@ -357,7 +359,7 @@
                     Among leave law built now.
                 </h4>
                 <div class="grid grid-cols-1 w-full gap-5 my-auto xsm:w-1/2 smm:grid-cols-3 smm:w-2/3">
-                    <div class="flex flex-1 flex-row space-x-4 w-full">
+                    <div class="flex flex-1 flex-row space-x-4 w-full about2Card">
                         <img src="./images/icon5.png" alt=""
                             class="p-3 w-10 h-10 bg-[#E9ECF2] rounded-md my-auto smm:w-12 md:h-12">
                         <p
@@ -365,7 +367,7 @@
                             Village did remove enjoyed
                         </p>
                     </div>
-                    <div class="flex flex-1 flex-row space-x-4 w-full">
+                    <div class="flex flex-1 flex-row space-x-4 w-full about2Card">
                         <img src="./images/icon6.png" alt=""
                             class="p-3 w-10 h-10 bg-[#E9ECF2] rounded-md my-auto smm:w-12 smm:h-12">
                         <p
@@ -373,7 +375,7 @@
                             Nay likely length sooner
                         </p>
                     </div>
-                    <div class="flex flex-1 flex-row space-x-4 w-full">
+                    <div class="flex flex-1 flex-row space-x-4 w-full about2Card">
                         <img src="./images/icon7.png" alt=""
                             class="p-3 w-10 h-10 bg-[#E9ECF2] rounded-md my-auto smm:w-12 smm:h-12">
                         <p
@@ -391,7 +393,8 @@
         <div class="max-w-screen-xl mx-auto px-3 xsm:px-7">
             <div class="grid grid-cols-1 gap-5 sm:gap-8 xsm:grid-cols-2">
                 <!-- Box 1 -->
-                <div class="flex flex-col rounded-2xl px-5 py-5 bg-[#F8F9FD] sm:px-10 sm:py-8 smm:px-14 smm:py-10">
+                <div class="flex flex-col rounded-2xl px-5 py-5 bg-[#F8F9FD] sm:px-10 sm:py-8 smm:px-14 smm:py-10"
+                    id="about3Box1">
                     <h4
                         class="font-manrope text-2xl leading-10 tracking-tight font-extrabold text-center mb-5 sm:text-3xl sm:leading-11 smm:text-4xl smm:leading-12">
                         Offend belong promote provision
@@ -407,7 +410,8 @@
                     </a>
                 </div>
                 <!-- Box 2 -->
-                <div class="flex flex-col rounded-2xl px-5 py-5 bg-[#F8F9FD] sm:px-10 sm:py-8 smm:px-14 smm:py-10">
+                <div class="flex flex-col rounded-2xl px-5 py-5 bg-[#F8F9FD] sm:px-10 sm:py-8 smm:px-14 smm:py-10"
+                    id="about3Box2">
                     <h4
                         class="font-manrope text-2xl leading-10 tracking-tight font-extrabold text-center mb-5 sm:text-3xl sm:leading-11 smm:text-4xl smm:leading-12">
                         Consulted ourselves it blessing welcom
@@ -439,10 +443,11 @@
             </h4>
             <div class="slide-content overflow-x-hidden">
                 <div class="swiper-wrapper">
-                    <!-- Card -->
+                    <!-- Card 1 -->
                     <div class="swiper-slide flex flex-col gap-7 sm:flex-row sm:gap-14 smm:gap-20">
                         <!-- Image -->
                         <div class="w-full relative pt-11 pl-11 pb-12 pr-12 bg-no-repeat xsm:pt-16 xsm:pl-16 xsm:pb-16 xsm:pr-16 sm:pt-12 sm:pl-12 sm:pb-12 sm:pr-12  md:pt-14 md:pl-14 md:pb-16 md:pr-16 smm:pt-12 smm:pl-12 smm:pb-16 smm:pr-16 smm:w-2/5"
+                            id="testimonialsImg"
                             style="background-image: url(./images/bg6.png), url(./images/bg8.png), url(./images/bg7.png); background-position: left top, right bottom, right top; background-size: 25%, 30%, 40%;">
                             <div>
                                 <img src="./images/testimonials1.png" alt="" class="w-full">
@@ -454,7 +459,7 @@
                             </div>
                         </div>
                         <!-- Description -->
-                        <div class="flex flex-col w-full my-auto sm:w-3/5">
+                        <div class="flex flex-col w-full my-auto sm:w-3/5" id="testimonialsDesc">
                             <img src="./images/icon8.png" alt="" class="w-4 mb-3 sm:w-6 smm:w-8 mdd:mb-5">
                             <h2 class="text-primaryColor text-xl mb-3 sm:text-2xl smm:text-3xl mdd:mb-5">
                                 &#9733;&#9733;&#9733;&#9733;&#9733;</h2>
@@ -484,10 +489,10 @@
     </section>
 
     <!-- Downloads & Blogs -->
-    <section class="bg-no-repeat bg-top bg-contain" style="background-image: url(./images/bg9.png);">
+    <section class="bg-no-repeat bg-top bg-contain overflow-hidden" style="background-image: url(./images/bg9.png);">
         <!-- Downloads -->
-        <div
-            class="max-w-screen-xl mx-auto px-3 py-14 xsm:px-7 xsm:pb-16 sm:py-16 md:pt-20 md:pb-20 smm:pb-32 smm:pt-40">
+        <div class="max-w-screen-xl mx-auto px-3 py-14 xsm:px-7 xsm:pb-16 sm:py-16 md:pt-20 md:pb-20 smm:pb-32 smm:pt-40"
+            id="downloads">
             <!-- Heading & Description -->
             <h6 class="font-poppins font-bold text-sm text-primaryColor text-center mx-auto mb-5">
                 PROJECT MANAGEMENT APP
@@ -504,7 +509,7 @@
             <div
                 class="flex flex-col space-x-0 space-y-3 w-fit justify-center mx-auto xsm:flex-row xsm:space-x-3 xsm:space-y-0">
                 <a href="#" class="flex flex-row px-7 py-3 text-white bg-primaryColor rounded-full hover:bg-tertiaryColor 
-                        ease-in-out duration-200 sm:px-9 sm:py-4">
+                        ease-in-out duration-200 sm:px-9 sm:py-4" id="playstore">
                     <img src="./images/icon9.png" alt="" class="mr-3 w-5">
                     <h6
                         class="flex-1 font-manrope font-semibold text-sm leading-3 tracking-tight my-auto sm:text-base sm:leading-5">
@@ -512,7 +517,7 @@
                     </h6>
                 </a>
                 <a href="#" class="flex flex-row px-7 py-3 text-white bg-[#05796B] rounded-full hover:bg-[#03534A] 
-                    ease-in-out duration-200 sm:px-9 sm:py-4">
+                    ease-in-out duration-200 sm:px-9 sm:py-4" id="googlePlay">
                     <img src="./images/icon10.png" alt="" class="mr-3 w-5">
                     <h6
                         class="flex-1 font-manrope font-semibold text-sm leading-3 tracking-tight my-auto sm:text-base sm:leading-5">
@@ -532,15 +537,16 @@
                         class="mb-6 font-manrope text-2xl leading-10 tracking-tight font-extrabold xsm:mb-0 sm:text-3xl sm:leading-11 smm:text-4xl smm:leading-12">
                         Our Latest Blog Posts
                     </h4>
-                    <a href="#" class="px-3 text-center py-3 font-poppins text-sm leading-3 text-white border-2 border-primaryColor bg-primaryColor rounded-xl hover:bg-transparent 
-                        hover:text-primaryColor ease-in-out duration-200 sm:px-12 sm:py-4 sm:text-base sm:leading-5">
+                    <a href="#"
+                        class="px-3 text-center py-3 font-poppins text-sm leading-3 text-white border-2 border-primaryColor bg-primaryColor rounded-xl hover:bg-transparent 
+                        hover:text-primaryColor ease-in-out duration-200 sm:px-12 sm:py-4 sm:text-base sm:leading-5 button">
                         See All Blog Posts
                     </a>
                 </div>
                 <!-- Blogs -->
                 <div class="flex flex-wrap justify-between">
                     <!-- Column 1 -->
-                    <div class="flex flex-col border-b-2 mb-7 sm:w-[48%] smm:w-[32%] smm:mb-0">
+                    <div class="flex flex-col border-b-2 mb-7 sm:w-[48%] smm:w-[32%] smm:mb-0" id="blogCol1">
                         <img src="./images/blog1.png" alt="" class="w-full rounded-xl mb-4">
                         <div
                             class="flex flex-row font-poppins font-semibold text-base leading-7 text-[#64607D] space-x-5 mb-3">
@@ -559,7 +565,7 @@
                         </p>
                     </div>
                     <!-- Column 2 -->
-                    <div class="flex flex-col border-b-2 mb-7 sm:w-[48%] smm:w-[32%] smm:mb-0">
+                    <div class="flex flex-col border-b-2 mb-7 sm:w-[48%] smm:w-[32%] smm:mb-0" id="blogCol2">
                         <img src="./images/blog2.png" alt="" class="w-full rounded-xl mb-4">
                         <div
                             class="flex flex-row font-poppins font-semibold text-base leading-7 text-[#64607D] space-x-5 mb-3">
@@ -576,8 +582,8 @@
                         </p>
                     </div>
                     <!-- Column 3 -->
-                    <div class="flex flex-col w-[100%] smm:w-[32%]">
-                        <div class="flex flex-row space-x-2 mb-7 pb-7 border-b-2 xsm:space-x-8">
+                    <div class="flex flex-col w-[100%] smm:w-[32%]" id="blogCol3">
+                        <div class="flex flex-row space-x-2 mb-7 pb-7 border-b-2 xsm:space-x-8 lastColBlog">
                             <div class="w-1/3">
                                 <img src="./images/blog3.png" alt="" class="rounded-xl w-full">
                             </div>
@@ -593,7 +599,7 @@
                                 </h6>
                             </div>
                         </div>
-                        <div class="flex flex-row space-x-2 mb-7 pb-7 border-b-2 xsm:space-x-8">
+                        <div class="flex flex-row space-x-2 mb-7 pb-7 border-b-2 xsm:space-x-8 lastColBlog">
                             <div class="w-1/3">
                                 <img src="./images/blog4.png" alt="" class="rounded-xl w-full">
                             </div>
@@ -609,7 +615,7 @@
                                 </h6>
                             </div>
                         </div>
-                        <div class="flex flex-row space-x-2 mb-7 pb-7 border-b-2 xsm:space-x-8">
+                        <div class="flex flex-row space-x-2 mb-7 pb-7 border-b-2 xsm:space-x-8 lastColBlog">
                             <div class="w-1/3">
                                 <img src="./images/blog5.png" alt="" class="rounded-xl w-full">
                             </div>
@@ -625,7 +631,7 @@
                                 </h6>
                             </div>
                         </div>
-                        <div class="flex flex-row space-x-2 pb-7 border-b-2 xsm:space-x-8">
+                        <div class="flex flex-row space-x-2 pb-7 border-b-2 xsm:space-x-8 lastColBlog">
                             <div class="w-1/3">
                                 <img src="./images/blog6.png" alt="" class="rounded-xl w-full">
                             </div>
@@ -648,11 +654,11 @@
     </section>
 
     <!-- Form -->
-    <section class="bg-[#05796B] text-white">
+    <section class="bg-[#05796B] text-white overflow-x-hidden">
         <div class="max-w-screen-xl mx-auto py-14 px-3 xsm:px-7 sm:py-16">
             <div class="flex flex-col justify-center gap-10 sm:flex-row smm:gap-24">
                 <!-- Left Content -->
-                <div class="w-full sm:w-1/2">
+                <div class="w-full sm:w-1/2" id="formDesc">
                     <h6 class="font-poppins font-bold text-xs text-center mb-4 sm:text-sm smm:text-base md:text-left">
                         WHY CHOOSE US
                     </h6>
@@ -667,7 +673,7 @@
                     </p>
                 </div>
                 <!-- Right Form -->
-                <div class="w-full my-auto sm:w-1/2">
+                <div class="w-full my-auto sm:w-1/2" id="form">
                     <form class="w-full justify-center content-center relative bg-transparent md:justify-start">
                         <input id="email" type="email" placeholder="Email Address" required
                             class="h-11 w-full px-4 rounded-md bg-[#F2F3F4] outline-none opacity-20 text-black font-semibold placeholder:font-poppins placeholder:font-medium placeholder:text-base placeholder:tracking-tight mb-6 sm:h-14 sm:placeholder:text-lg">
@@ -768,7 +774,7 @@
                         <input type="email" placeholder="Your email address" required
                             class="h-full w-2/3 px-4 bg-[#F9F9F9] outline-none placeholder:font-manrope placeholder:text-xs placeholder:leading-5 
                             placeholder:tracking-tight placeholder:font-medium placeholder:text-black placeholder:opacity-20 sm:placeholder:text-sm smm:placeholder:text-base">
-                        <button id="newsletterSubmit" type="submit"
+                        <button type="submit" id="subscribe"
                             class="absolute h-full w-1/3 right-0 outline-none border-2 font-manrope font-medium text-xs tracking-tight border-[#00E1F0] bg-[#00E1F0] 
                             text-white hover:bg-transparent hover:text-[#00E1F0] ease-in-out duration-200 sm:text-sm smm:text-base">
                             Subscribe
@@ -793,6 +799,7 @@
 
     <!-- JS File -->
     <script src="./dist/js/app.js"></script>
+
 </body>
 
 </html>
