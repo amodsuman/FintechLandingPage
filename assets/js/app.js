@@ -1,9 +1,6 @@
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
-// import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-// gsap.registerPlugin(DrawSVGPlugin);
-
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// gsap.registerPlugin(ScrollTrigger);
 
 // Navbar Styling On Scrolling
 const nav = document.getElementById('header');
@@ -103,25 +100,24 @@ gsap.from('#clients div', {
 // Roadmap Section
 if (screen.width >= 768) {
     gsap.timeline({
-        delay: 1,
         scrollTrigger: {
-            trigger: '#roadmap',
+            trigger: '#roadmapSvg',
             toggleActions: 'restart reverse restart reverse',
         }
     })
-        .from('#roadmapImg', {
-            scale: 0,
-            opacity: 0,
-            duration: 1,
+        .from("#svgPath", {
+            drawSVG: "0%",
+            duration: 2,
+            ease: "none"
         })
         .from("#roadmapStep1", {
             y: 100,
             opacity: 0,
-        })
+        }, '-=1.5')
         .from("#roadmapStep2", {
             y: 100,
             opacity: 0,
-        })
+        }, '-=0.8')
         .from("#roadmapStep3", {
             y: 100,
             opacity: 0,
@@ -166,7 +162,6 @@ gsap.from('#about1Desc', {
         toggleActions: 'restart reverse restart reverse',
     }
 });
-
 gsap.from('#about1Box1', {
     duration: 1,
     y: 100,
@@ -176,7 +171,6 @@ gsap.from('#about1Box1', {
         toggleActions: 'restart reverse restart reverse',
     }
 });
-
 gsap.from('#about1Box2', {
     duration: 1,
     y: 100,
@@ -186,7 +180,6 @@ gsap.from('#about1Box2', {
         toggleActions: 'restart reverse restart reverse',
     }
 });
-
 gsap.from('#about1Box3', {
     duration: 1,
     y: 100,
@@ -196,7 +189,6 @@ gsap.from('#about1Box3', {
         toggleActions: 'restart reverse restart reverse',
     }
 });
-
 gsap.from('#moreAboutPlatform', {
     duration: 0.8,
     scale: 0.7,
@@ -211,7 +203,7 @@ gsap.from('#moreAboutPlatform', {
 // About2 Section
 gsap.from('.about2Card', {
     duration: 1,
-    scale: 0,
+    x: 100,
     opacity: 0,
     scrollTrigger: {
         trigger: '.about2Card',
@@ -229,7 +221,6 @@ gsap.from('#about3Box1', {
         toggleActions: 'restart reverse restart reverse',
     }
 });
-
 gsap.from('#about3Box2', {
     duration: 1,
     y: 100,
@@ -250,7 +241,6 @@ gsap.from('#testimonialsImg', {
         toggleActions: 'restart reverse restart reverse',
     }
 });
-
 gsap.from('#testimonialsDesc', {
     duration: 1,
     x: 100,
@@ -292,7 +282,6 @@ gsap.from('#blogCol1', {
         toggleActions: 'restart reverse restart reverse',
     }
 });
-
 gsap.from('#blogCol2', {
     duration: 1,
     y: 100,
@@ -302,7 +291,6 @@ gsap.from('#blogCol2', {
         toggleActions: 'restart reverse restart reverse',
     }
 });
-
 gsap.from('#blogCol3 .lastColBlog', {
     duration: 1,
     x: 100,
@@ -324,7 +312,6 @@ gsap.from('#formDesc', {
         toggleActions: 'restart reverse restart reverse',
     }
 });
-
 gsap.from('#form', {
     duration: 1,
     x: 100,
@@ -333,24 +320,4 @@ gsap.from('#form', {
         trigger: '#form',
         toggleActions: 'restart reverse restart reverse',
     }
-});
-
-// Footer Section
-gsap.from('#subscribe', {
-    duration: 0.8,
-    opacity: 0,
-    yoyo: true,
-    repeat: -1,
-    scrollTrigger: {
-        trigger: '#subscribe',
-        toggleActions: 'restart reverse restart reverse',
-    }
-});
-
-// Buttons
-gsap.from('.button', {
-    duration: 0.8,
-    scale: 0.7,
-    yoyo: true,
-    repeat: -1,
 });
