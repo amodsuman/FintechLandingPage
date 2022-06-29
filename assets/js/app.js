@@ -105,36 +105,36 @@ if (screen.width >= 768) {
             toggleActions: 'restart reverse restart reverse',
         }
     })
-        // .from("#svgPath", {
-        //     drawSVG: "0%",
-        //     duration: 2,
-        //     ease: "none"
-        // })
-        // .from("#roadmapStep1", {
-        //     y: 100,
-        //     opacity: 0,
-        // }, '-=1.5')
-        // .from("#roadmapStep2", {
-        //     y: 100,
-        //     opacity: 0,
-        // }, '-=0.8')
-        // .from("#roadmapStep3", {
-        //     y: 100,
-        //     opacity: 0,
-        // });
+        .to("#svgPath", {
+            strokeDashoffset: 0,
+            duration: 2,
+            ease: "none"
+        })
         .from("#roadmapStep1", {
             y: 100,
             opacity: 0,
-            delay: 1,
-        })
+        }, '-=2')
         .from("#roadmapStep2", {
             y: 100,
             opacity: 0,
-        })
+        }, '-=1.3')
         .from("#roadmapStep3", {
             y: 100,
             opacity: 0,
-        });
+        }, '-=0.5');
+    // .from("#roadmapStep1", {
+    //     y: 100,
+    //     opacity: 0,
+    //     delay: 1,
+    // })
+    // .from("#roadmapStep2", {
+    //     y: 100,
+    //     opacity: 0,
+    // })
+    // .from("#roadmapStep3", {
+    //     y: 100,
+    //     opacity: 0,
+    // });
 } else {
     gsap.from('#roadmapStep1', {
         duration: 1,
