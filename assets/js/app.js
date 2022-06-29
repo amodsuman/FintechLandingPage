@@ -1,9 +1,9 @@
-// import { gsap } from 'gsap';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// gsap.registerPlugin(ScrollTrigger);
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 // Navbar Styling On Scrolling
-const nav = document.getElementById('header');
+const nav = document.querySelector('header');
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 5) {
         nav.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
@@ -105,19 +105,32 @@ if (screen.width >= 768) {
             toggleActions: 'restart reverse restart reverse',
         }
     })
-        .from("#svgPath", {
-            drawSVG: "0%",
-            duration: 2,
-            ease: "none"
-        })
+        // .from("#svgPath", {
+        //     drawSVG: "0%",
+        //     duration: 2,
+        //     ease: "none"
+        // })
+        // .from("#roadmapStep1", {
+        //     y: 100,
+        //     opacity: 0,
+        // }, '-=1.5')
+        // .from("#roadmapStep2", {
+        //     y: 100,
+        //     opacity: 0,
+        // }, '-=0.8')
+        // .from("#roadmapStep3", {
+        //     y: 100,
+        //     opacity: 0,
+        // });
         .from("#roadmapStep1", {
             y: 100,
             opacity: 0,
-        }, '-=1.5')
+            delay: 1,
+        })
         .from("#roadmapStep2", {
             y: 100,
             opacity: 0,
-        }, '-=0.8')
+        })
         .from("#roadmapStep3", {
             y: 100,
             opacity: 0,
