@@ -24,6 +24,7 @@ hamburger.addEventListener("click", () => {
     if (hamburger.classList.contains('active')) {
         hamburger.classList.remove('active');
         span1.style.marginBottom = '8px';
+        span2.style.marginTop = '0px';
         span2.style.width = '20px';
         span1.style.transform = 'rotate(0deg)';
         span2.style.transform = 'rotate(0deg)';
@@ -34,6 +35,7 @@ hamburger.addEventListener("click", () => {
     } else {
         hamburger.classList.add('active');
         span1.style.marginBottom = '0px';
+        span2.style.marginTop = '-2px';
         span2.style.width = '32px';
         span1.style.transform = 'rotate(45deg)';
         span2.style.transform = 'rotate(-45deg)';
@@ -122,19 +124,6 @@ if (screen.width >= 768) {
             y: 100,
             opacity: 0,
         }, '-=0.5');
-    // .from("#roadmapStep1", {
-    //     y: 100,
-    //     opacity: 0,
-    //     delay: 1,
-    // })
-    // .from("#roadmapStep2", {
-    //     y: 100,
-    //     opacity: 0,
-    // })
-    // .from("#roadmapStep3", {
-    //     y: 100,
-    //     opacity: 0,
-    // });
 } else {
     gsap.from('#roadmapStep1', {
         duration: 1,
