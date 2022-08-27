@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap);
 /*
-! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -138,6 +138,7 @@ select,
 textarea {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
   color: inherit; /* 1 */
   margin: 0; /* 2 */
@@ -261,10 +262,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
 }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1; /* 1 */
-  color: #9ca3af; /* 2 */
-}
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
@@ -307,13 +304,101 @@ video {
   max-width: 100%;
   height: auto;
 }
-/*
-Ensure the default browser behavior of the `hidden` attribute.
-*/
-[hidden] {
-  display: none;
-}
 *, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+::-webkit-backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -421,8 +506,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: auto;
   margin-bottom: auto;
 }
-.-mt-\[2px\]{
-  margin-top: -2px;
+.-mt-\[3px\]{
+  margin-top: -3px;
 }
 .mb-1{
   margin-bottom: 0.25rem;
@@ -475,9 +560,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-9{
   margin-bottom: 2.25rem;
 }
-.-mt-\[3px\]{
-  margin-top: -3px;
-}
 .flex{
   display: flex;
 }
@@ -487,11 +569,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hidden{
   display: none;
 }
-.h-0\.5{
-  height: 0.125rem;
-}
-.h-0{
-  height: 0px;
+.h-\[3px\]{
+  height: 3px;
 }
 .h-full{
   height: 100%;
@@ -522,20 +601,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-14{
   height: 3.5rem;
 }
-.h-1{
-  height: 0.25rem;
-}
-.h-\[3px\]{
-  height: 3px;
-}
-.h-\[2\.5px\]{
-  height: 2.5px;
-}
 .w-8{
   width: 2rem;
-}
-.w-6{
-  width: 1.5rem;
 }
 .w-full{
   width: 100%;
@@ -584,12 +651,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[48\%\]{
   width: 48%;
 }
-.w-\[7px\]{
-  width: 7px;
-}
-.w-\[20px\]{
-  width: 20px;
-}
 .max-w-screen-xl{
   max-width: 1280px;
 }
@@ -614,22 +675,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grow{
   flex-grow: 1;
 }
-.origin-right{
-  transform-origin: right;
-}
 .origin-left{
   transform-origin: left;
 }
 .origin-center{
   transform-origin: center;
 }
-.rotate-45{
-  --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.-rotate-45{
-  --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.origin-right{
+  transform-origin: right;
 }
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -862,6 +915,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-4{
   padding: 1rem;
 }
+.p-0{
+  padding: 0px;
+}
 .p-3{
   padding: 0.75rem;
 }
@@ -873,9 +929,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-6{
   padding: 1.5rem;
-}
-.p-0{
-  padding: 0px;
 }
 .px-3{
   padding-left: 0.75rem;
@@ -1150,26 +1203,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .placeholder\:font-poppins::-moz-placeholder{
   font-family: Poppins;
 }
-.placeholder\:font-poppins:-ms-input-placeholder{
-  font-family: Poppins;
-}
 .placeholder\:font-poppins::placeholder{
   font-family: Poppins;
 }
 .placeholder\:font-manrope::-moz-placeholder{
   font-family: Manrope;
 }
-.placeholder\:font-manrope:-ms-input-placeholder{
-  font-family: Manrope;
-}
 .placeholder\:font-manrope::placeholder{
   font-family: Manrope;
 }
 .placeholder\:text-xs::-moz-placeholder{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-.placeholder\:text-xs:-ms-input-placeholder{
   font-size: 0.75rem;
   line-height: 1rem;
 }
@@ -1181,18 +1224,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.placeholder\:text-base:-ms-input-placeholder{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
 .placeholder\:text-base::placeholder{
   font-size: 1rem;
   line-height: 1.5rem;
 }
 .placeholder\:font-semibold::-moz-placeholder{
-  font-weight: 600;
-}
-.placeholder\:font-semibold:-ms-input-placeholder{
   font-weight: 600;
 }
 .placeholder\:font-semibold::placeholder{
@@ -1201,16 +1237,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .placeholder\:font-medium::-moz-placeholder{
   font-weight: 500;
 }
-.placeholder\:font-medium:-ms-input-placeholder{
-  font-weight: 500;
-}
 .placeholder\:font-medium::placeholder{
   font-weight: 500;
 }
 .placeholder\:leading-5::-moz-placeholder{
-  line-height: 1.25rem;
-}
-.placeholder\:leading-5:-ms-input-placeholder{
   line-height: 1.25rem;
 }
 .placeholder\:leading-5::placeholder{
@@ -1219,17 +1249,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .placeholder\:tracking-tight::-moz-placeholder{
   letter-spacing: -0.025em;
 }
-.placeholder\:tracking-tight:-ms-input-placeholder{
-  letter-spacing: -0.025em;
-}
 .placeholder\:tracking-tight::placeholder{
   letter-spacing: -0.025em;
 }
 .placeholder\:text-black::-moz-placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.placeholder\:text-black:-ms-input-placeholder{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -1240,16 +1263,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .placeholder\:opacity-40::-moz-placeholder{
   opacity: 0.4;
 }
-.placeholder\:opacity-40:-ms-input-placeholder{
-  opacity: 0.4;
-}
 .placeholder\:opacity-40::placeholder{
   opacity: 0.4;
 }
 .placeholder\:opacity-20::-moz-placeholder{
-  opacity: 0.2;
-}
-.placeholder\:opacity-20:-ms-input-placeholder{
   opacity: 0.2;
 }
 .placeholder\:opacity-20::placeholder{
@@ -1423,10 +1440,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.5rem;
   }
   .xsm\:placeholder\:text-base::-moz-placeholder{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .xsm\:placeholder\:text-base:-ms-input-placeholder{
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -1620,19 +1633,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-  .sm\:placeholder\:text-lg:-ms-input-placeholder{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
   .sm\:placeholder\:text-lg::placeholder{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
   .sm\:placeholder\:text-sm::-moz-placeholder{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-  .sm\:placeholder\:text-sm:-ms-input-placeholder{
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -1947,10 +1952,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
   .smm\:placeholder\:text-base::-moz-placeholder{
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .smm\:placeholder\:text-base:-ms-input-placeholder{
     font-size: 1rem;
     line-height: 1.5rem;
   }
